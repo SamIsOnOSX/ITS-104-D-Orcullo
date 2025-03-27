@@ -19,11 +19,11 @@ namespace StudentGradeArrays
         Console.WriteLine("Student 3 Grades: " + student5[0] + ", " + student5[1] + ", " + student5[2]); 
         Console.WriteLine("----------------------------------------------------------------------------");
         
-        double avg1 = student1.Average();
-        double avg2 = student2.Average();
-        double avg3 = student3.Average();
-        double avg4 = student4.Average();
-        double avg5 = student5.Average();
+        int avg1 = (int)student1.Average();
+        int avg2 = (int)student2.Average();
+        int avg3 = (int)student3.Average();
+        int avg4 = (int)student4.Average();
+        int avg5 = (int)student5.Average();
 
         Console.WriteLine("Student 1 Average: " + avg1);
         Console.WriteLine("Student 2 Average: " + avg2);
@@ -33,9 +33,11 @@ namespace StudentGradeArrays
         Console.WriteLine("----------------------------------------------------------------------------");
 
 
-        double highestAverage = new double[] { avg1, avg2, avg3, avg4, avg5 }.Max();
+        double highestAverage = new int[] { avg1, avg2, avg3, avg4, avg5 }.Max();
         Console.WriteLine("Highest Average Grade: " + highestAverage);
         Console.WriteLine("----------------------------------------------------------------------------");
+        
+        Console.WriteLine("Press any key to exit.");
         
         Console.ReadKey();
         }
